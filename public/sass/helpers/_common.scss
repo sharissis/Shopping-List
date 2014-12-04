@@ -1,0 +1,36 @@
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	font-family: $default-font;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: baseline;
+	line-height: 1;
+	color: $body-font-color;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix {
+	*zoom: 1;
+	&:before, &:after {
+	    content: " ";
+	    display: table;
+	}
+    &:after {
+	    clear: both;
+	}
+}

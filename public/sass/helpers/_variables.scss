@@ -1,0 +1,22 @@
+// Colors
+$white: #FFF;
+$black: #000;
+$dark-gray: #454545;
+$saffron: #F9BF3B;
+$aquamarine: #66CC99;
+$jaffa: #F27935;
+$cinnabar: #E74C3C;
+$ming: #336E7B;
+$mountain-meadow: #16a085;
+
+$primary-color: $saffron;
+$secondary-color: lighten($mountain-meadow, 3%);
+$tertiary-color: $cinnabar;
+$body-font-color: $dark-gray;
+
+// Fonts
+$bitter: "Bitter", Georgia, serif;
+$default-font: $bitter;
+
+// Measurements
+$max-width: 30rem;

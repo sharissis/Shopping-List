@@ -1,0 +1,56 @@
+.add-item-form {
+	display: none;
+	margin: 0 auto;
+	width: 100%;
+	padding-right: 2rem;
+	position: relative;
+	@include transition(all, 0.25s, ease);
+	.add-item-input, .add-item-button {
+		height: 2rem;
+		padding: 0.5rem;
+		border: 0;
+		@include border-radius(0.25rem);
+	}
+	.add-item-input-container {
+		width: 100%;
+		padding-right: 6.5rem;
+	}
+	.add-item-input, .add-item-button, .message {
+		font-size: 0.8rem;
+	}
+	.add-item-input {
+		float: left;
+		width: 100%;
+	}
+	.add-item-button {
+		float: left;
+		width: 6rem;
+		position: absolute;
+		top: 0;
+		right: 2rem;
+		background-color: lighten($primary-color, 5%);
+		cursor: pointer;
+		&:hover {
+			background-color: $primary-color;
+		}
+		&:active {
+			background-color: darken($primary-color, 5%);
+		}
+		@include bp(m) {
+			right: 1rem;
+		}
+	}
+	.message {
+		display: none;
+		margin: 1rem 0 0;
+		color: lighten($primary-color, 25%);
+		.fa {
+			color: lighten($primary-color, 25%);
+		}
+	}
+	@include bp(m) {
+		display: block;
+		padding: 0 1rem;
+		max-width: $max-width;
+	}
+}

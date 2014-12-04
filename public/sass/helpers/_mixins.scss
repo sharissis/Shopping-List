@@ -1,0 +1,24 @@
+@mixin bp($point) {
+	@if $point == m {
+		@media (min-width: $max-width) { @content; }
+	}
+	@if $point == l {
+		@media (min-width: 60em) { @content; }
+	}
+}
+
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+@mixin transition($prop: all, $time: 1s, $ease: ease) {
+	-webkit-transition: $prop $time $ease;
+	-moz-transition: $prop $time $ease;
+	-o-transition: $prop $time $ease;
+	-ms-transition: $prop $time $ease;
+	transition: $prop $time $ease;
+}
